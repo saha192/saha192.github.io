@@ -1,0 +1,27 @@
+:root{
+  --bg:#0f1724; --card:#0b1220; --text:#e6eef8; --accent:#7dd3fc;
+  --container:1100px;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;
+  background:var(--bg); color:var(--text); line-height:1.5;
+}
+.container{max-width:var(--container); margin:0 auto; padding:1rem;}
+.nav{background:rgba(0,0,0,0.15); position:sticky; top:0; z-index:20;}
+.nav .container{display:flex;align-items:center;justify-content:space-between;}
+.brand{font-weight:700;color:var(--accent);text-decoration:none;}
+.nav-list{list-style:none;margin:0;display:flex;gap:1rem;padding:0;}
+.nav-list a{color:var(--text);text-decoration:none;padding:.5rem}
+.menu-btn{display:none;background:none;border:none;color:var(--text);font-size:1.25rem}
+.hero{padding:3rem 0}
+.hero h1{font-size:2rem;margin:.2rem 0}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(0,0,0,0.05)); padding:1rem; border-radius:12px; margin:.75rem 0}
+.footer{padding:2rem 0;border-top:1px solid rgba(255,255,255,0.03)}
+
+/* responsive */
+@media (max-width:800px){
+  .nav-list{display:none;flex-direction:column;background:transparent;position:absolute;right:1rem;top:64px;padding:0.5rem;border-radius:8px}
+  .menu-btn{display:block}
+  .nav-list.show{display:flex}
+}
