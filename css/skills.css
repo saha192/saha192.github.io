@@ -1,79 +1,115 @@
-body {
-  margin: 0;
-  font-family: Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif;
-  background: #0f1724;
-  color: #e6eef8;
+:root {
+  --bg:#0f1724;
+  --card:#0b1220;
+  --text:#e6eef8;
+  --accent:#7dd3fc;
+  --container:1100px;
 }
 
-.container { max-width: 1100px; margin: 0 auto; padding: 1rem; }
+* { box-sizing: border-box; }
+
+body {
+  margin:0;
+  font-family: Inter, system-ui, Segoe UI, Roboto, "Helvetica Neue", Arial;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.5;
+}
+
+header {
+  background: rgba(0,0,0,0.2);
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  font-weight: 700;
+  color: var(--accent);
+  font-size: 1.25rem;
+}
+
+.nav-links a {
+  color: var(--text);
+  text-decoration: none;
+  margin: 0 0.75rem;
+  font-weight: 500;
+}
+
+.nav-links a.active {
+  color: var(--accent);
+}
+
+.skills-section {
+  max-width: var(--container);
+  margin: 2rem auto;
+  padding: 1rem;
+}
 
 .skills-section h2 {
-  margin-top: 2rem;
+  margin-bottom: 1rem;
   font-size: 1.5rem;
-  color: var(--accent, #7dd3fc);
+  color: var(--accent);
+  text-align: center;
 }
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   gap: 1rem;
-  margin-top: 1rem;
+  justify-items: center;
 }
 
 .skill-box {
-  background: #fff;
+  background: var(--card);
+  padding: 1rem;
   border-radius: 12px;
-  padding: 20px;
-  text-align: center;
+  width: 120px;
   height: 120px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.skill-box i {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
-
-.skill-box p {
-  font-size: 14px;
-  font-weight: 600;
-  margin: 0;
-  color: inherit;
+  justify-content: center;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skill-box:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
 }
 
-/* Brand Colors */
-.python { color: #3776AB; }
-.sql { color: #F29111; }
-.excel { color: #217346; }
-.spark { color: #E25A1C; }
-.airflow { color: #017CEE; }
-.azure { color: #0078D4; }
-.aws { color: #FF9900; }
-.cloudera { color: #F96702; }
-.kubernetes { color: #326CE5; }
-.datadog { color: #632CA6; }
-.powerbi { color: #F2C811; }
-.git { color: #F1502F; }
+.skill-box img,
+.skill-box i {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 10px;
+  color: var(--accent);
+}
 
-.eda { color: #38BDF8; }
-.stats { color: #10B981; }
-.ml { color: #EF4444; }
-.dl { color: #8B5CF6; }
-.fe { color: #F59E0B; }
-.nlp { color: #3B82F6; }
-.llm { color: #0EA5E9; }
-.ab { color: #14B8A6; }
-.anomaly { color: #EAB308; }
-.pipeline { color: #22D3EE; }
-.dwh { color: #6366F1; }
-.ops { color: #84CC16; }
+.skill-box p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: inherit;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+.footer-icons a {
+  margin: 0 0.5rem;
+  color: var(--text);
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.footer-icons a:hover {
+  color: var(--accent);
+}
