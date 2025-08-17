@@ -56,13 +56,13 @@
     .footer { padding: 2rem 0; border-top: 1px solid rgba(255,255,255,0.05); text-align: center; font-size: 0.875rem; color: #94a3b8; }
     .footer a { color: var(--accent-light); text-decoration: none; }
 
-    /* Education logo alignment */
-    .edu-item .edu-header {
+    /* Logo alignment for both education and experience cards */
+    .card .card-header {
       display: flex;
       align-items: center;
       justify-content: space-between;
     }
-    .edu-logo {
+    .card-header .card-logo {
       width: 60px;
       height: auto;
       margin-left: 1rem;
@@ -102,13 +102,19 @@
       <h2>💼 Experience</h2>
 
       <article class="card">
-        <h3>Operations Analyst — Econship Tech Pvt. Ltd.</h3>
+        <div class="card-header">
+          <h3>Operations Analyst — Econship Tech Pvt. Ltd.</h3>
+          <img src="https://cdn.prod.website-files.com/643006af9e6f614b39e0dfcb/645b9ff96228f13a05af9dcc_econship_logo.webp" alt="Econship Tech Logo" class="card-logo">
+        </div>
         <p>I am working in export operations, ensuring timely bookings, container pickups, documentation & customer satisfaction. Handling dead freight and open slot planning to prevent shortfalls and optimize space utilization on vessels.</p>
         <time>July 2025 - Present</time>
       </article>
 
       <article class="card">
-        <h3>Machine Learning Intern — Experiqs Private Limited</h3>
+        <div class="card-header">
+          <h3>Machine Learning Intern — Experiqs Private Limited</h3>
+          <img src="https://experiqs.tech/wp-content/uploads/2024/02/experiqs-logo-scaled.webp" alt="Experiqs Logo" class="card-logo">
+        </div>
         <p>Worked on Gas Cylinder Weight prediction project. Processed sensor signal data to extract features for a weight prediction model. Started with Random Forest and XGBoost as baseline models, later used MiniROCKET and ConvLSTM to significantly improve accuracy.</p>
         <time>May 2025 - July 2025</time>
       </article>
@@ -119,9 +125,9 @@
       <h2>🎓 Education</h2>
 
       <article class="card edu-item">
-        <div class="edu-header">
+        <div class="edu-header card-header">
           <h3>Master of Technology — IIT Bombay</h3>
-          <img src="https://www.nicepng.com/png/full/164-1641315_iitb-logo-iit-bombay-logos.png" alt="IIT Bombay Logo" class="edu-logo">
+          <img src="https://www.nicepng.com/png/full/164-1641315_iitb-logo-iit-bombay-logos.png" alt="IIT Bombay Logo" class="card-logo">
         </div>
         <p><strong>CGPA:</strong> 10.0/10.0</p>
         <p><strong>Achievements:</strong> Rank 1, Institute Silver Medalist, Smt. Jayalakshmi & Shri R. Narasimhan Awardee, Recipient of Institute Academic Prize</p>
@@ -129,9 +135,9 @@
       </article>
 
       <article class="card edu-item">
-        <div class="edu-header">
+        <div class="edu-header card-header">
           <h3>Bachelor of Technology — NIT Rourkela</h3>
-          <img src="https://techsociety.nitrkl.ac.in/img/features/img1.png" alt="NIT Rourkela Logo" class="edu-logo">
+          <img src="https://techsociety.nitrkl.ac.in/img/features/img1.png" alt="NIT Rourkela Logo" class="card-logo">
         </div>
         <p><strong>CGPA:</strong> 8.68/10.00</p>
         <time>2017 - 2021</time>
