@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  font-family: Inter, system-ui, Segoe UI, Roboto, Arial, sans-serif;
+  background: #0f1724;
+  color: #e6eef8;
+}
+
+.container { max-width: 1100px; margin: 0 auto; padding: 1rem; }
+
+.skills-section h2 {
+  margin-top: 2rem;
+  font-size: 1.5rem;
+  color: var(--accent, #7dd3fc);
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.skill-box {
+  background: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-box i {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.skill-box p {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  color: inherit;
+}
+
+.skill-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+/* Brand Colors */
+.python { color: #3776AB; }
+.sql { color: #F29111; }
+.excel { color: #217346; }
+.spark { color: #E25A1C; }
+.airflow { color: #017CEE; }
+.azure { color: #0078D4; }
+.aws { color: #FF9900; }
+.cloudera { color: #F96702; }
+.kubernetes { color: #326CE5; }
+.datadog { color: #632CA6; }
+.powerbi { color: #F2C811; }
+.git { color: #F1502F; }
+
+.eda { color: #38BDF8; }
+.stats { color: #10B981; }
+.ml { color: #EF4444; }
+.dl { color: #8B5CF6; }
+.fe { color: #F59E0B; }
+.nlp { color: #3B82F6; }
+.llm { color: #0EA5E9; }
+.ab { color: #14B8A6; }
+.anomaly { color: #EAB308; }
+.pipeline { color: #22D3EE; }
+.dwh { color: #6366F1; }
+.ops { color: #84CC16; }
