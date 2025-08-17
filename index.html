@@ -41,12 +41,33 @@
     .hero h1 { font-size: 2.5rem; margin-bottom: 0.5rem; color: var(--accent-light); }
     .tagline { font-size: 1.125rem; color: #cbd5e1; }
     h2 { font-size: 1.75rem; margin-top: 2rem; margin-bottom: 1rem; color: var(--accent); border-left: 4px solid var(--accent); padding-left: 0.5rem; }
-    .card { background: linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02)); border: 1px solid rgba(255,255,255,0.08); padding: 1.5rem; border-radius: 16px; margin: 1rem 0; box-shadow: var(--shadow); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+    .card {
+      background: linear-gradient(145deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+      border: 1px solid rgba(255,255,255,0.08);
+      padding: 1.5rem;
+      border-radius: 16px;
+      margin: 1rem 0;
+      box-shadow: var(--shadow);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
     .card:hover { transform: translateY(-6px); box-shadow: 0 12px 28px rgba(0,0,0,0.5); }
     .card h3 { margin-top: 0; font-size: 1.25rem; color: var(--accent-light); }
     .card p { margin: 0.75rem 0; color: #dbeafe; }
     .footer { padding: 2rem 0; border-top: 1px solid rgba(255,255,255,0.05); text-align: center; font-size: 0.875rem; color: #94a3b8; }
     .footer a { color: var(--accent-light); text-decoration: none; }
+
+    /* Education logo alignment */
+    .edu-item .edu-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .edu-logo {
+      width: 60px;
+      height: auto;
+      margin-left: 1rem;
+    }
+
     @media (max-width: 800px) {
       .nav-list { display: none; flex-direction: column; background: rgba(10, 15, 28, 0.95); backdrop-filter: blur(8px); position: absolute; right: 1rem; top: 64px; padding: 0.75rem; border-radius: 12px; box-shadow: var(--shadow); }
       .menu-btn { display: block; }
@@ -91,26 +112,30 @@
         <p>Worked on Gas Cylinder Weight prediction project. Processed sensor signal data to extract features for a weight prediction model. Started with Random Forest and XGBoost as baseline models, later used MiniROCKET and ConvLSTM to significantly improve accuracy.</p>
         <time>May 2025 - July 2025</time>
       </article>
-
     </section>
 
     <!-- Education Section -->
     <section class="edu">
       <h2>🎓 Education</h2>
 
-      <article class="card">
-        <h3>Master of Technology — IIT Bombay</h3>
+      <article class="card edu-item">
+        <div class="edu-header">
+          <h3>Master of Technology — IIT Bombay</h3>
+          <img src="https://www.nicepng.com/png/full/164-1641315_iitb-logo-iit-bombay-logos.png" alt="IIT Bombay Logo" class="edu-logo">
+        </div>
         <p><strong>CGPA:</strong> 10.0/10.0</p>
         <p><strong>Achievements:</strong> Rank 1, Institute Silver Medalist, Smt. Jayalakshmi & Shri R. Narasimhan Awardee, Recipient of Institute Academic Prize</p>
         <time>2023 - 2025</time>
       </article>
 
-      <article class="card">
-        <h3>Bachelor of Technology — NIT Rourkela</h3>
+      <article class="card edu-item">
+        <div class="edu-header">
+          <h3>Bachelor of Technology — NIT Rourkela</h3>
+          <img src="https://techsociety.nitrkl.ac.in/img/features/img1.png" alt="NIT Rourkela Logo" class="edu-logo">
+        </div>
         <p><strong>CGPA:</strong> 8.68/10.00</p>
         <time>2017 - 2021</time>
       </article>
-
     </section>
   </main>
 
