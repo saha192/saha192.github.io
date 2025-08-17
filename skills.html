@@ -1,93 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Skills - Nishi Paul</title>
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/skills.css"/>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Skills — Shubhashish</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/skills.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet" />
 </head>
 <body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container">
+      <a class="brand" href="index.html">Shubhashish Saha</a>
+      <button id="menuBtn" class="menu-btn">☰</button>
+      <ul id="navList" class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="blog.html">Blogs</a></li>
+        <li><a href="skills.html" class="active">Skills</a></li>
+      </ul>
+    </div>
+  </nav>
 
-  <!-- Header -->
-  <header>
-    <div class="logo">Nishi Paul</div>
-    <nav class="nav-wrapper">
-      <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="blog.html">Blogs</a>
-        <a href="skills.html" class="active">Skills</a>
-      </div>
-    </nav>
-  </header>
+  <!-- Content -->
+  <main class="container">
+    <header class="hero">
+      <h1>My Skills</h1>
+      <p>A quick overview of what I work with — tools, languages & methods I use regularly.</p>
+    </header>
 
-  <main>
     <!-- Programming Languages & Tools -->
     <section class="skills-section">
       <h2>Programming Languages & Tools</h2>
       <div class="skills-grid">
-
-        <div class="skill-box">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python Logo"/>
-          <p>Python</p>
-        </div>
-
-        <div class="skill-box">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL Logo"/>
-          <p>SQL</p>
-        </div>
-
-        <div class="skill-box">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoft/microsoft-original.svg" alt="Excel Logo"/>
-          <p>Excel</p>
-        </div>
-
-        <div class="skill-box">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/f/f3/Apache_Spark_logo.svg" alt="Spark Logo"/>
-          <p>Spark</p>
-        </div>
-
-        <div class="skill-box">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/AirflowLogo.png" alt="Airflow Logo"/>
-          <p>Airflow</p>
-        </div>
-
-        <div class="skill-box">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg" alt="Azure Logo"/>
-          <p>Azure</p>
-        </div>
-
-        <div class="skill-box">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" alt="AWS Logo"/>
-          <p>AWS</p>
-        </div>
-
-        <div class="skill-box">
-          <img src="https://companieslogo.com/img/orig/CLDR-ec690d46.png?t=1722001184" alt="Cloudera Logo"/>
-          <p>Cloudera</p>
-        </div>
-
-        <div class="skill-box">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" alt="Kubernetes Logo"/>
-          <p>Kubernetes</p>
-        </div>
-
-        <div class="skill-box">
-          <img src="https://companieslogo.com/img/orig/DDOG-7f4ee1c3.png?t=1722001196" alt="Datadog Logo"/>
-          <p>Datadog</p>
-        </div>
-
-        <div class="skill-box">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" alt="Power BI Logo"/>
-          <p>Power BI</p>
-        </div>
-
-        <div class="skill-box">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git Logo"/>
-          <p>Git</p>
-        </div>
-
+        <div class="skill-box"><i class="fab fa-python"></i><p>Python</p></div>
+        <div class="skill-box"><i class="fas fa-database"></i><p>SQL</p></div>
+        <div class="skill-box"><i class="fas fa-table"></i><p>Excel</p></div>
+        <div class="skill-box"><i class="fas fa-bolt"></i><p>Spark</p></div>
+        <div class="skill-box"><i class="fas fa-project-diagram"></i><p>Airflow</p></div>
+        <div class="skill-box"><i class="fab fa-microsoft"></i><p>Azure</p></div>
+        <div class="skill-box"><i class="fab fa-aws"></i><p>AWS</p></div>
+        <div class="skill-box"><i class="fas fa-server"></i><p>Cloudera</p></div>
+        <div class="skill-box"><i class="fas fa-cubes"></i><p>Kubernetes</p></div>
+        <div class="skill-box"><i class="fas fa-chart-line"></i><p>Datadog</p></div>
+        <div class="skill-box"><i class="fas fa-chart-bar"></i><p>Power BI</p></div>
+        <div class="skill-box"><i class="fab fa-git-alt"></i><p>Git</p></div>
       </div>
     </section>
 
@@ -95,7 +53,6 @@
     <section class="skills-section">
       <h2>Techniques & Methods</h2>
       <div class="skills-grid">
-
         <div class="skill-box"><i class="fas fa-search"></i><p>Data Analysis</p></div>
         <div class="skill-box"><i class="fas fa-chart-area"></i><p>EDA</p></div>
         <div class="skill-box"><i class="fas fa-superscript"></i><p>Statistical Analysis</p></div>
@@ -110,19 +67,15 @@
         <div class="skill-box"><i class="fas fa-stream"></i><p>Data Pipeline</p></div>
         <div class="skill-box"><i class="fas fa-warehouse"></i><p>Data Warehousing</p></div>
         <div class="skill-box"><i class="fas fa-cogs"></i><p>Data Operations</p></div>
-
       </div>
     </section>
   </main>
 
   <!-- Footer -->
-  <footer>
-    <div class="footer-icons">
-      <a href="https://github.com/nishi-2" target="_blank"><i class="fab fa-github"></i></a>
-      <a href="https://linkedin.com/in/nishipaul" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="mailto:nishi.paul.in@gmail.com"><i class="fas fa-envelope"></i></a>
-    </div>
+  <footer class="footer">
+    <p>© 2025 Shubhashish | <a href="mailto:shubhashishsaha192@gmail.com">shubhashishsaha192@gmail.com</a></p>
   </footer>
 
+  <script src="js/script.js"></script>
 </body>
 </html>
