@@ -52,33 +52,36 @@
 
       <article class="card">
         <h3>Student Dropout Risk Prediction (E-Learning Platform)</h3>
-        <p>Objective: Built a machine learning model to predict student dropout risk in digital courses to enable proactive engagement.
+        <p><strong>Objective:</strong> Built a machine learning model to predict student dropout risk in digital courses to enable proactive engagement.</p>
+        <p><strong>Dataset:</strong> 200 students, including demographics, engagement metrics, and dropout status.</p>
+        
+        <p><strong>EDA Highlights:</strong></p>
+        <ul>
+          <li>Higher dropout in Python courses and among female students.</li>
+          <li>Dropout strongly linked to low session count, shorter session duration, and low satisfaction ratings.</li>
+        </ul>
 
-Dataset: 200 students, including demographics, engagement metrics, and dropout status.
+        <p><strong>Modeling:</strong></p>
+        <ul>
+          <li>Preprocessed data (encoding, scaling, feature selection).</li>
+          <li>Tested Logistic Regression, Decision Tree, Random Forest, XGBoost, SVM with 5-fold CV.</li>
+          <li><strong>Best Model:</strong> Random Forest → F1: 0.82, Accuracy: 82.5%, ROC-AUC: 0.84.</li>
+        </ul>
 
-EDA Highlights:
+        <p><strong>Key Features:</strong></p>
+        <ul>
+          <li>session_count (38%)</li>
+          <li>satisfaction_rating (21.8%)</li>
+          <li>avg_session_duration (12.3%)</li>
+        </ul>
 
-Higher dropout in Python courses and among female students.
+        <p><strong>Business Impact:</strong></p>
+        <ul>
+          <li>Early-warning system to identify at-risk students.</li>
+          <li>Targeted interventions: boost engagement, improve satisfaction, support Python learners, and optimize session structures.</li>
+          <li>Potential to reduce dropout by 15–20%.</li>
+        </ul>
 
-Dropout strongly linked to low session count, shorter session duration, and low satisfaction ratings.
-
-Modeling:
-
-Preprocessed data (encoding, scaling, feature selection).
-
-Tested Logistic Regression, Decision Tree, Random Forest, XGBoost, SVM with 5-fold CV.
-
-Best Model: Random Forest → F1: 0.82, Accuracy: 82.5%, ROC-AUC: 0.84.
-
-Key Features: session_count (38%), satisfaction_rating (21.8%), avg_session_duration (12.3%).
-
-Business Impact:
-
-Early-warning system to identify at-risk students.
-
-Targeted interventions: boost engagement, improve satisfaction, support Python learners, and optimize session structures.
-
-Potential to reduce dropout by 15–20%.</p>
         <a href="https://github.com/saha192/Predicting-Student-Dropout-Risk/tree/main" target="_blank">View on GitHub</a>
       </article>
 
